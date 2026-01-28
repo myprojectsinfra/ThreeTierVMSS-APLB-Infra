@@ -5,7 +5,7 @@ resource "azurerm_linux_virtual_machine_scale_set" "myVMSS" {
   location            = each.value.vmss_location
   resource_group_name = each.value.resource_group_name
   sku                 = each.value.sku_size
-  instances           = 1
+  instances           = each.value.vmss_instances
   admin_username      = each.value.admin_username
   admin_password      = each.value.admin_password
   # REQUIRED to allow password login
