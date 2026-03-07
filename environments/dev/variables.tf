@@ -134,6 +134,7 @@ variable "vmss_back_config" {
       vmss_location        = string
       resource_group_name  = string
       sku_size             = string
+      vmss_instances       = number
       admin_username       = string
       admin_password       = string
       nic_name             = string
