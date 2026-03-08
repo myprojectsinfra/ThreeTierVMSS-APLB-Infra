@@ -20,7 +20,7 @@ permissions:
 jobs:
   terraformInit:
     name: Terraform Init
-    runs-on: [self-hosted, ThreeTierVMSS]
+    runs-on: [self-hosted, ThreeTierVMSS-APLB-Infra]
 
     steps:
     - name: Checkout repo
