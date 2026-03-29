@@ -68,5 +68,11 @@ jobs:
       continue-on-error: true
       run: terraform plan -var "subscription_id=${{ secrets.AZURE_SUBSCRIPTION_ID }}"
       working-directory: ${{ env.TF_DIR }}  # Set the working directory for plan
+
+    - name: Terraform Apply
+      id: apply
+      continue-on-error: true
+      run: terraform apply --auto-approve -var "subscription_id=${{ secrets.AZURE_SUBSCRIPTION_ID }}"
+      working-directory: ${{ env.TF_DIR }}  # Set the working directory for plan
       
     
