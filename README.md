@@ -2,7 +2,7 @@
 
 This consists of the following :
 1. One Resource Group for logical separation of resources
-2. One Virtual Network toprovide private ip addresses to your connected devices
+2. One Virtual Network to provide private ip addresses to your connected devices
 3. Multiple subnet like:
      ApplicationGatewaySubnet dedicated to application gateway
      FontendSubnet that contains all the frontend compute resources like vmss server
